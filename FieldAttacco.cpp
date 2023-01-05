@@ -12,7 +12,7 @@ FieldAttacco::FieldAttacco()
 
 // non capisco int line e int col
 // sono inutili passati al metodo
-void stampaCampoAttacco(char attackField[12][12])
+void FieldAttacco::stampaCampoAttacco(char attackField[12][12])
 {
     for (int i = 1; i <= 12; i++)
     {
@@ -25,7 +25,7 @@ void stampaCampoAttacco(char attackField[12][12])
     cout << endl;
 }
 
-void printGrigliaVuotaAttacco(int LINE, int COL)
+void FieldAttacco::printGrigliaVuotaAttacco(int LINE, int COL)
 {
     // matrice[12]x[12]
     cout << "\t";
@@ -68,7 +68,7 @@ void printGrigliaVuotaAttacco(int LINE, int COL)
     cout << "\n";
 }
 
-void convertStringToInt(string coordinata, char attackField[12][12])
+void FieldAttacco::convertStringToInt(string coordinata, char attackField[12][12])
 {
     stringstream ss(coordinata);
     // creo le 2 variabili per il posizionamneto della barca
